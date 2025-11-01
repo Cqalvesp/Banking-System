@@ -9,7 +9,8 @@ int main() {
          << "1. Make an Account" << endl
          << "2. Make a deposit" << endl
          << "3. Make a withdrawal" << endl
-         << "4. Quit" << endl;
+         << "4. Quit" << endl 
+         << "Make your choice: ";
 
     cin >> choice;
 }
