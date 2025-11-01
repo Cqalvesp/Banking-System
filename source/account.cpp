@@ -12,9 +12,13 @@ public:
     double Balance;
 };
 
-int main() {
-    Account account1;
-    account1.AccountNumber = 0;
-    
-    return 0;
-}
+// Customer class
+class Customer {
+private:
+    string FirstName;
+    string LastName;
+    int NumOfAccounts;
+    long SSN;
+    long DateOfBirth;
+};
+

@@ -2,8 +2,24 @@
 
 using namespace std;
 
+int create_acc() {
+    return 0;
+}
+
+int make_deposit() {
+    return 0;
+}
+
+int make_withdrawal() {
+    return 0;
+}
+
+void close_app() {
+    return;
+}
+
 int main() {
-    int choice;
+    char choice;
 
     cout << "Welcome to the Christian Bank!" << endl
          << "1. Make an Account" << endl
@@ -13,4 +29,12 @@ int main() {
          << "Make your choice: ";
 
     cin >> choice;
+
+    switch(choice) {
+
+        case '1':
+            create_acc();
+            break;
+    }
+    return 0;
 }
