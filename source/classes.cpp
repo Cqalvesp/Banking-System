@@ -6,7 +6,8 @@ using std::string;
 // Account class
 class Account {
 public:
-    string Name;
+    string FirstName;
+    string LastName;
     long AccountNumber;
     string CreationDate;
     double Balance;
