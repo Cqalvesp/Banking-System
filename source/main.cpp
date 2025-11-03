@@ -12,13 +12,31 @@ int create_acc() {
     double Balance;
     
     int NumOfAccounts;
-    long SSN;
+    long SocialSecNum;
     long DateOfBirth;
     
     cout << "\nPlease provide some information to create your account." << endl;
 
     cout << "FirstName: ";
     cin >> FirstName;
+
+    cout << "LasttName: ";
+    cin >> LastName;
+
+    cout << "Today's Date(MM/DD/YYYY): ";
+    cin >> CreationDate;
+
+    cout << "Number of accounts you already have: ";
+    cin >> NumOfAccounts;
+
+    cout << "Social Security Number: ";
+    cin >> SocialSecNum;
+
+    cout << "Date of Birth(MM/DD/YYYY): ";
+    cin >> DateOfBirth;
+
+
+
 
     return 0;
 }

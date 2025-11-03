@@ -19,7 +19,7 @@ private:
     string FirstName;
     string LastName;
     int NumOfAccounts;
-    long SSN;
+    long SocialSecNum;
     long DateOfBirth;
 };
 
