@@ -1,7 +1,11 @@
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 using std::string;
+
+ifstream iFile;
+ofstream oFile;
 
 int create_acc() {
     string FirstName;
@@ -11,9 +15,7 @@ int create_acc() {
     long CreationDate;
     double Balance;
     
-    int NumOfAccounts;
-    long SocialSecNum;
-    long DateOfBirth;
+    int PIN_Number;
     
     cout << "\nPlease provide some information to create your account." << endl;
 
@@ -25,17 +27,6 @@ int create_acc() {
 
     cout << "Today's Date(MM/DD/YYYY): ";
     cin >> CreationDate;
-
-    cout << "Number of accounts you already have: ";
-    cin >> NumOfAccounts;
-
-    cout << "Social Security Number: ";
-    cin >> SocialSecNum;
-
-    cout << "Date of Birth(MM/DD/YYYY): ";
-    cin >> DateOfBirth;
-
-
 
 
     return 0;
