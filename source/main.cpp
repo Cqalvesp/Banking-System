@@ -1,11 +1,7 @@
 #include <iostream>
-#include <fstream>
 
 using namespace std;
 using std::string;
-
-ifstream iFile;
-ofstream oFile;
 
 int create_acc() {
     string FirstName;
@@ -27,6 +23,9 @@ int create_acc() {
 
     cout << "Today's Date(MM/DD/YYYY): ";
     cin >> CreationDate;
+
+    cout << "Select your PIN Number: ";
+    cin >> PIN_Number;
 
 
     return 0;
@@ -50,18 +49,16 @@ int transaction() {
         case '1':
             cout << "\nEnter the amount you would like to deposit: ";
             cin >> amount;
-
             break;
 
         case '2':
             cout << "\nEnter the amount you would like to withdraw: ";
             cin >> amount;
-
             break;
 
         default:
             cout << "\nSorry, that isn't an option." << endl;
-        break;
+            break;
     }
 
     // Add info to transaction file (Acc. Num, Amount, Deposit)

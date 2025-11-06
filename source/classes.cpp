@@ -1,26 +1,51 @@
 #include <iostream>
+#include <fstream>
+#include <format>
 
 using std::string;
-
+using namespace std;
 
 // Account class
 class Account {
+    // Private attributes
+    int PIN;   
+    int LastFourSocial;
+public:
     string FirstName;
     string LastName;
+    long DateOfBirth;
     long AccountNumber;
     string CreationDate;
     double Balance;
-    int PIN;
 
+    // Constructor
+    Account() {
+        cout << "Account object is created.\n";
+    }
+
+    // Method to add account attributes to database
     void create_acc() {
+
+        ofstream oFile;
+
+        oFile.open("~/Desktop/Repos/Banking-System/database/accounts.txt");
+        if (!oFile.is_open()) {
+            cout << "Error opening the output file!\n";
+        }
+
+
+        oFile.close();
+
         return;
     }
 
-    void deposit(int amount) {
+    // Method to increase the balance of account object
+    void deposit(double amount) {
         return;
     }
 
-    void withdraw(int amount) {
+    // Method to increase the balance of account object
+    void withdraw(double amount) {
         return;
     }
 };
