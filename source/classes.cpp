@@ -18,7 +18,6 @@ public:
     string LastName;
     long DateOfBirth;
     long AccountNumber;
-    string CreationDate;
     double Balance;
 
     // Constructor
@@ -37,7 +36,7 @@ public:
             cout << "Error opening the output file!\n";
         }
 
-        oFile << "\n";
+        // oFile << std::format("First Name: {} | Last Name: {} | Account Number: {} | Balance: ${:.2f}\n", FirstName, LastName, AccountNumber, Balance);
 
         oFile.close();
 

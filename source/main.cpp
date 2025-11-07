@@ -1,4 +1,5 @@
 #include <iostream>
+#include "classes.cpp"
 
 using namespace std;
 using std::string;
@@ -8,24 +9,28 @@ int create_acc() {
     string LastName;
 
     long AccountNumber;
-    long CreationDate;
+    long DateOfBirth;
     double Balance;
     
     int PIN_Number;
+    int LastFourSocial;
     
-    cout << "\nPlease provide some information to create your account." << endl;
+    cout << "\nPlease provide some information to create your account.\n";
 
-    cout << "FirstName: ";
+    cout << "First Name: ";
     cin >> FirstName;
 
-    cout << "LasttName: ";
+    cout << "Last Name: ";
     cin >> LastName;
 
-    cout << "Today's Date(MM/DD/YYYY): ";
-    cin >> CreationDate;
+    cout << "Date of Birth (MMDDYYYY): ";
+    cin >> DateOfBirth;
 
     cout << "Select your PIN Number: ";
     cin >> PIN_Number;
+
+    cout << "Last four digits of your Social Security Number: ";
+    cin >> LastFourSocial;
 
 
     return 0;
@@ -60,8 +65,6 @@ int transaction() {
             cout << "\nSorry, that isn't an option." << endl;
             break;
     }
-
-    // Add info to transaction file (Acc. Num, Amount, Deposit)
 
     return 0;
 }
