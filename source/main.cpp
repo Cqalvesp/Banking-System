@@ -8,13 +8,11 @@ int create_acc() {
     string FirstName;
     string LastName;
 
-    long AccountNumber;
-    long DateOfBirth;
-    double Balance;
+    int DateOfBirth;
     
     int PIN_Number;
     int LastFourSocial;
-    
+
     cout << "\nPlease provide some information to create your account.\n";
 
     cout << "First Name: ";
@@ -32,6 +30,7 @@ int create_acc() {
     cout << "Last four digits of your Social Security Number: ";
     cin >> LastFourSocial;
 
+    Account Account;
 
     return 0;
 }

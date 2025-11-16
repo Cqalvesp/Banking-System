@@ -1,10 +1,13 @@
 #include <iostream>
+#include <random>
 #include <fstream>
 #include <sstream>
 #include <cstdlib>
 
 using namespace std;
 using std::string;
+
+
 
 // Account class
 class Account {
@@ -20,10 +23,21 @@ public:
     long AccountNumber;
     double Balance;
 
+    int generateRandomNumber() {
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<> distr(100000000, 999999999);
+        return distr(gen);
+    }
+
     // Constructor
     Account() {
-        cout << "Account object is created.\n"
-             << "Account Number: ";
+        AccountNumber = generateRandomNumber();
+        Balance = 0;
+
+        stringstream Constructor;
+        Constructor << "Account object is created.\n"
+        << "Account Number: " << AccountNumber;
     }
 
     // Method to add account attributes to database
